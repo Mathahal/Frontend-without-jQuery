@@ -414,8 +414,9 @@
 
 	_superagent2.default.get('/test.php').set('Accept', 'application/json').end(function (err, res) {
 	  var test = JSON.parse(res.text);
-	  console.log(test.text);
+	  console.log(test.test);
 	});
+	console.log(12333333232323);
 
 	console.log(test());
 

@@ -7,8 +7,8 @@ request
   .set('Accept', 'application/json')
   .end(( err, res) => {
     let test = JSON.parse(res.text)
-    console.log( test.text )
+    console.log(test.test)
   })
-  
+  console.log(12333333232323)
 
 console.log(test())

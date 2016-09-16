@@ -32,8 +32,11 @@ module.exports = {
       // ./public directory is being served
       host: 'localhost',
       port: 3000,
-      server: { baseDir: ['.'] },
+      proxy: 'http://localhost:8888/',
+      // server: { baseDir: ['./'] },
       files: ["./*.html", "./assets"]
+    },{
+      reload: false
     })
   ]
 }
