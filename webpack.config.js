@@ -1,4 +1,6 @@
-var webpack = require('webpack')
+var webpack = require('webpack'),
+    BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+
 module.exports = {
   entry: {
     entry: './assets/js/entry.js'
@@ -23,5 +25,15 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  plugins: [
+    new BrowserSyncPlugin({
+      // browse to http://localhost:3000/ during development,
+      // ./public directory is being served
+      host: 'localhost',
+      port: 3000,
+      server: { baseDir: ['.'] },
+      files: ["./"]
+    })
+  ]
 }
