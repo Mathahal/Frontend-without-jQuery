@@ -1,4 +1,5 @@
 var webpack = require('webpack'),
+    path = require('path'),
     BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
@@ -6,7 +7,7 @@ module.exports = {
     entry: './assets/js/entry.js'
   },
   output: {
-    path: './build/',
+    path: path.resolve('./build/'),
     filename: 'build.js'
   },
   module: {
