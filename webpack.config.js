@@ -37,7 +37,7 @@ module.exports = {
       // server: { baseDir: ['./'] },
       files: ["./*.html", "./assets"]
     },{
-      reload: false
+      reload: true
     })
   ]
 }
