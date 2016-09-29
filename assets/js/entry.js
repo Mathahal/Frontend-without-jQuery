@@ -1,3 +1,3 @@
 
 require('../css/style.sass')
-require('./es6.jsx')
+require('./render.js')
