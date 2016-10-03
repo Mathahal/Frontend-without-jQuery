@@ -9,7 +9,7 @@ export default class CommentList extends React.Component{
   render() {
     const commentNodes = this.props.data.map( single => {
       return ( 
-        <Comment author={single.name} key={single.id}>
+        <Comment key={single.id}>
           {single.message} 
         </Comment> 
       )
