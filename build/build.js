@@ -21818,7 +21818,7 @@
 
 	var _CommentList2 = _interopRequireDefault(_CommentList);
 
-	var _CommentForm = __webpack_require__(186);
+	var _CommentForm = __webpack_require__(185);
 
 	var _CommentForm2 = _interopRequireDefault(_CommentForm);
 
@@ -23549,8 +23549,7 @@
 	exports.default = Comment;
 
 /***/ },
-/* 185 */,
-/* 186 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
