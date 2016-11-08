@@ -8,6 +8,7 @@ export default class CommentForm extends React.Component{
     this.state = {param: []}
   }
   handleParamChange(e) {
+    console.log(e)
     this.setState({param: e.target.value})
   }
   gettingDataByParams(e){

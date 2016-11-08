@@ -1,4 +1,6 @@
 <?php 
+
+phpinfo();
 if ( $_POST["param"] || $_GET["param"] ) {
     $param = empty( $_POST["param"] ) ? $_GET["param"] : $_POST["param"];
 } else {
@@ -8,8 +10,9 @@ $params = explode(",", $param);
 foreach ($params as $key => $value) {
     $obj[] = [
         "id" => $key + 1,
-        "message" => $value
+        "message" => $value.'_returned'
     ];
 }
 $json = [ "param" => $obj ];
 echo json_encode($json);
+
