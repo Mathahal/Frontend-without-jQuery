@@ -24,6 +24,11 @@ module.exports = {
         query: {
           presets: ['es2015', 'react']
         }
+      },
+      {
+        test: /\.js$/,
+        exclude: /(application|node_modules|bootstrap|bower_components|.git)/,
+        loader: 'uglify'
       }
     ]
   },
